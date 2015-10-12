@@ -84,6 +84,12 @@
               "name": "discountPercentage",
               "title": "Discount%",
               "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "promotionTypeList",
+              "title": "Promotion type",
+              "inputType": "dropdownlist"
             }
           ],
           "name": "createPromoModel",
