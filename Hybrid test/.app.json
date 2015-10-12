@@ -90,6 +90,30 @@
               "name": "promotionTypeList",
               "title": "Promotion type",
               "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "allItems",
+              "title": "All items",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "customerAddress",
+              "title": "Address",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "reference",
+              "title": "Reference",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "comments",
+              "title": "Comments",
+              "inputType": "text"
             }
           ],
           "name": "createPromoModel",
@@ -97,7 +121,7 @@
           "cancelButton": "Cancel"
         }
       ],
-      "title": "Create",
+      "title": "Create Promo",
       "addToNavigation": true,
       "icon": "mostrecent"
     }
