@@ -18,16 +18,6 @@
                     </label>
                 </li>
                 <li>
-                    <label>Reference
-                        <input data-bind="value: createPromoModel.fields.reference" type="text">
-                    </label>
-                </li>
-                <li>
-                    <label>All items
-                        <input data-bind="value: createPromoModel.fields.allItems" type="checkbox">
-                    </label>
-                </li>
-                <li>
                     <label>Customer
                         <select data-bind="value: createPromoModel.fields.customerList" data-role="dropdownlist">
                             <option value="First Option">First Option</option>
@@ -56,13 +46,37 @@
                     </label>
                 </li>
                 <li>
+                    <label>Promotion type
+                        <select data-bind="value: createPromoModel.fields.promotionTypeList" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>All items
+                        <input data-bind="value: createPromoModel.fields.allItems" type="checkbox">
+                    </label>
+                </li>
+                <li>
                     <label>Address
                         <input data-bind="value: createPromoModel.fields.customerAddress" type="text">
                     </label>
                 </li>
                 <li>
+                    <label>Reference
+                        <input data-bind="value: createPromoModel.fields.reference" type="text">
+                    </label>
+                </li>
+                <li>
                     <label>Comments
                         <input data-bind="value: createPromoModel.fields.comments" type="text">
+                    </label>
+                </li>
+                <li>
+                    <label>Promotion Type
+                        <input data-bind="value: createPromoModel.fields.promotionType" type="text">
                     </label>
                 </li>
             </ul>
