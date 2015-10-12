@@ -26,6 +26,25 @@
                         </select>
                     </label>
                 </li>
+                <li>
+                    <label>Deal
+                        <select data-bind="value: createPromoModel.fields.dealList" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>Min. qty
+                        <input data-bind="value: createPromoModel.fields.minimumQuantity" type="number">
+                    </label>
+                </li>
+                <li>
+                    <label>Discount%
+                        <input data-bind="value: createPromoModel.fields.discountPercentage" type="number">
+                    </label>
+                </li>
             </ul>
 
             <div class="button-group">

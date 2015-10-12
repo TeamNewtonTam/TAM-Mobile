@@ -10,6 +10,9 @@ app.createPromo = kendo.observable({
 (function(parent) {
     var createPromoModel = kendo.observable({
         fields: {
+            discountPercentage: '',
+            minimumQuantity: '',
+            dealList: '',
             customerList: '',
             endBuy: '',
             startBuy: '',

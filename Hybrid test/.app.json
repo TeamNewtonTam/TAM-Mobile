@@ -66,6 +66,24 @@
               "name": "customerList",
               "title": "Customer",
               "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "dealList",
+              "title": "Deal",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "minimumQuantity",
+              "title": "Min. qty",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "discountPercentage",
+              "title": "Discount%",
+              "inputType": "number"
             }
           ],
           "name": "createPromoModel",
