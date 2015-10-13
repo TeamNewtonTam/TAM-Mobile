@@ -1,37 +1,88 @@
 <div data-role="view" data-title="Create Promotion" data-layout="main" data-model="app.createPromo" data-show="app.createPromo.onShow" data-after-show="app.createPromo.afterShow">
     <div id="createPromoModel" class="form-view">
         <form>
+            <h3>Main</h3>
             <ul class="form-content" data-role="listview" data-style="inset">
-                <h3>
-                    Main
-                </h3>
                 <li>
                     <label>Description
-                        <input data-bind="value: createPromoModel.fields.description" placeholder="Enter description" type="text">
+                        <input data-bind="value: createPromoModel.fields.description" placeholder="Description" type="text">
                     </label>
                 </li>
                 <li>
-                    <label>Promotion type
+                    <label>Promotion Type
+                        <!--
                         <select data-bind="value: createPromoModel.fields.promotionTypeList" data-role="dropdownlist">
                             <option value="First Option">First Option</option>
                             <option value="Second Option">Second Option</option>
                             <option value="Third Option">Third Option</option>
                         </select>
+                        -->
+                        <select value="Misc">
+                            <option value="First Option">Commission</option>
+                            <option value="Second Option">Contest</option>
+                            <option value="Third Option">Misc</option>
+                        </select>
                     </label>
                 </li>
                 <li>
-                    <label>Buy date
+                    <label>Buy Start Date
                         <input data-bind="value: createPromoModel.fields.startBuy" type="date">
                     </label>
                 </li>
                 <li>
-                    <label>To
+                    <label>Buy End Date
                         <input data-bind="value: createPromoModel.fields.endBuy" type="date">
                     </label>
                 </li>
                 <li>
                     <label>Currency
+                        <!--
                         <select data-bind="value: createPromoModel.fields.currencyList" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+-->
+                        <select value="USD">
+                            <option value="USD">USD</option>
+                            <option value="CAD">CAD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>Reference
+                        <input data-bind="value: createPromoModel.fields.reference" type="text" placeholder="Reference">
+                    </label>
+                </li>
+                <li>
+                    <label>All Items
+                        <!--
+						<input data-bind="value: createPromoModel.fields.allItems" type="checkbox">
+-->
+                        <input type="checkbox" data-role="switch" data-checked=true />
+                    </label>
+                </li>
+            </ul>
+            <h3>Customer</h3>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Customer
+                        <select data-bind="value: createPromoModel.fields.customerList" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+            </ul>
+            <h3>
+                    Deal
+                </h3>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Deal
+                        <select data-bind="value: createPromoModel.fields.dealList" data-role="dropdownlist">
                             <option value="First Option">First Option</option>
                             <option value="Second Option">Second Option</option>
                             <option value="Third Option">Third Option</option>
@@ -39,68 +90,36 @@
                     </label>
                 </li>
                 <li>
-                    <label>Reference
-                        <input data-bind="value: createPromoModel.fields.reference" type="text">
+                    <label>Min Quantity
+                        <input data-bind="value: createPromoModel.fields.minimumQuantity" type="number" value=0>
                     </label>
                 </li>
                 <li>
-                    <label>All items
-                        <input data-bind="value: createPromoModel.fields.allItems" type="checkbox">
+                    <label>Discount%
+                        <input data-bind="value: createPromoModel.fields.discountPercentage" type="number">
                     </label>
                 </li>
-                <h3>
-                    Customer
-                </h3>                
-                <ul class="form-content" data-role="listview" data-style="inset">
-                    <li>
-                        <label>Customer
-                            <select data-bind="value: createPromoModel.fields.customerList" data-role="dropdownlist">
-                                <option value="First Option">First Option</option>
-                                <option value="Second Option">Second Option</option>
-                                <option value="Third Option">Third Option</option>
-                            </select>
-                        </label>
-                    </li>
-                </ul>
-                <h3>
-                    Deal
-                </h3>                
-                <ul class="form-content" data-role="listview" data-style="inset">
-                    <li>
-                        <label>Deal
-                            <select data-bind="value: createPromoModel.fields.dealList" data-role="dropdownlist">
-                                <option value="First Option">First Option</option>
-                                <option value="Second Option">Second Option</option>
-                                <option value="Third Option">Third Option</option>
-                            </select>
-                        </label>
-                    </li>
-                    <li>
-                        <label>Min. qty
-                            <input data-bind="value: createPromoModel.fields.minimumQuantity" type="number">
-                        </label>
-                    </li>
-                    <li>
-                        <label>Discount%
-                            <input data-bind="value: createPromoModel.fields.discountPercentage" type="number">
-                        </label>
-                    </li>
-                </ul>
-                <h3>
-                    Comments
-                </h3>
+            </ul>
+            <h3>Comments</h3>
+            <textarea></textarea>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <!--
+				<li>
+                    
+                    <label>Comments
+                        
+                        <input data-bind="value: createPromoModel.fields.comments" type="text">
+
+                        
+                    </label>
+				</li>
+-->
                 
-                <ul class="form-content" data-role="listview" data-style="inset">
-                    <li>
-                        <label>Comments
-                            <input data-bind="value: createPromoModel.fields.comments" type="text">
-                        </label>
-                    </li>
-                </ul>
-                <div class="button-group">
-                    <a data-role="button" data-bind="events: { click: createPromoModel.cancel }">Cancel</a>
-                    <a class="primary" data-role="button" data-bind="events: { click: createPromoModel.submit }">Confirm</a>
-                </div>
+            </ul>
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: createPromoModel.cancel }">Cancel</a>
+                <a class="primary" data-role="button" data-bind="events: { click: createPromoModel.submit }">Confirm</a>
+            </div>
         </form>
         <!-- START_CUSTOM_CODE_createPromoModel -->
         <!-- END_CUSTOM_CODE_createPromoModel -->
