@@ -108,22 +108,35 @@
 
 /* START_CUSTOM_CODE_kendoUiMobileApp */
 .info-wrapper {
-   border: none;
-       background: #3496da;
-   padding:1.5em;
+  border: none;
+
+  padding:1.5em;
 }
 .info-wrapper-left {
-   float:left;
-   width:100%;
-   background: #FFFFFF;
+  float:left;
+  width:100%;
+  
 }
 .ice-logo {
-       background:url("../images/promotion.png") no-repeat 0 0;
-   margin-top: 7px;
-   width: 294px;
-   height: 200px;
-   margin: 0px auto;
+      background:url("../images/promotion.png") no-repeat 0 0;
+  margin-top: 7px;
+  width: 294px;
+  height: 200px;
+  margin: 0px auto;
 }
+
+
+#kendoUiMobileApp .km-view-title {
+   background-color: #2F2F2F;
+   color: #FFFFFF;
+}
+
+#kendoUiMobileApp .km-tabstrip {
+   background-color: #2F2F2F;
+   color: #FFFFFF;
+}
+
+
 
 /* END_CUSTOM_CODE_kendoUiMobileApp */
 

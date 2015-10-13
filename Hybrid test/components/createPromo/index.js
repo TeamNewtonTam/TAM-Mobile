@@ -17,7 +17,7 @@ app.createPromo = kendo.observable({
             allItems: '',
             promotionTypeList: '',
             discountPercentage: '',
-            minimumQuantity: '',
+            minimumQuantity: '0',
             dealList: '',
             customerList: '',
             endBuy: '',
@@ -32,4 +32,7 @@ app.createPromo = kendo.observable({
 })(app.createPromo);
 
 // START_CUSTOM_CODE_createPromoModel
+
+
+
 // END_CUSTOM_CODE_createPromoModel
