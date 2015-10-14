@@ -9,19 +9,6 @@ app.promoListView = kendo.observable({
 // END_CUSTOM_CODE_promoListView
 (function(parent) {
     var dataProvider = app.data.defaultProvider,
-        processImage = function(img) {
-            if (!img) {
-                var empty1x1png = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQI12NgYAAAAAMAASDVlMcAAAAASUVORK5CYII=';
-                img = 'data:image/png;base64,' + empty1x1png;
-            } else if (img.slice(0, 4) !== 'http' &&
-                img.slice(0, 2) !== '//' &&
-                img.slice(0, 5) !== 'data:') {
-                var setup = dataProvider.setup;
-                img = setup.scheme + ':' + setup.url + setup.apiKey + '/Files/' + img + '/Download';
-            }
-
-            return img;
-        },
         flattenLocationProperties = function(dataItem) {
             var propName, propValue,
                 isLocation = function(value) {
@@ -53,9 +40,6 @@ app.promoListView = kendo.observable({
                 for (var i = 0; i < data.length; i++) {
                     var dataItem = data[i];
 
-                    dataItem['LikesUrl'] =
-                        processImage(dataItem['Likes']);
-
                     flattenLocationProperties(dataItem);
                 }
             },
@@ -66,14 +50,6 @@ app.promoListView = kendo.observable({
                             field: 'Text',
                             defaultValue: ''
                         },
-                        'Likes': {
-                            field: 'Likes',
-                            defaultValue: ''
-                        },
-                    },
-                    icon: function() {
-                        var i = 'globe';
-                        return kendo.format('km-icon km-{0}', i);
                     }
                 }
             },
