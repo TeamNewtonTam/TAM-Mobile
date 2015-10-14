@@ -1,0 +1,125 @@
+{
+  "type": "kendo-ui-mobile",
+  "views": [
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "homeView",
+      "components": [],
+      "title": "Home View",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "createPromo",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "description",
+              "title": "Description",
+              "inputType": "text",
+              "placeholder": "Enter description"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "startBuy",
+              "title": "Buy date",
+              "inputType": "date"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "endBuy",
+              "title": "To",
+              "inputType": "date"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "customerList",
+              "title": "Customer",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "dealList",
+              "title": "Deal",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "minimumQuantity",
+              "title": "Min. qty",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "discountPercentage",
+              "title": "Discount%",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "promotionTypeList",
+              "title": "Promotion type",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "allItems",
+              "title": "All items",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "customerAddress",
+              "title": "Address",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "reference",
+              "title": "Reference",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "comments",
+              "title": "Comments",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "promotionType",
+              "title": "Promotion Type",
+              "inputType": "text"
+            }
+          ],
+          "name": "createPromoModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Create Promo",
+      "addToNavigation": true,
+      "icon": "mostrecent"
+    }
+  ],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "defaultProvider",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
+      "title": "DefaultProvider",
+      "source": "everlive",
+      "everliveKey": "4aMnmOOvUSJIgIbL",
+      "offlineStorage": true
+    }
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "tabstrip",
+  "view": "homeView",
+  "transition": "slide",
+  "skin": "native"
+}
