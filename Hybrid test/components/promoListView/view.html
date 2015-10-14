@@ -7,8 +7,9 @@
     <!-- END_CUSTOM_CODE_promoListViewModel -->
     <script type="text/x-kendo-template" id="promoListViewModelTemplate">
         <div class="image-with-text">
-            <h3>#: data['Text'] #</h3>
-
+            <img src="#: data['LikesUrl'] #" width="30%" height="30%">
+            <h3><span class="#: data.icon() #"></span>#: data['Text'] #</h3>
+            <p>#: data['Likes'] #</p>
         </div>
     </script>
 </div>

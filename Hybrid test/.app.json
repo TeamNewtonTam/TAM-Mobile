@@ -114,7 +114,10 @@
           "name": "promoListViewModel",
           "dataProvider": "defaultProvider",
           "collection": "Activities",
+          "iconField": true,
+          "imageField": "Likes",
           "headerField": "Text",
+          "subHeaderField": "Likes",
           "masterDetails": false,
           "pullToRefresh": false,
           "endlessScroll": false
