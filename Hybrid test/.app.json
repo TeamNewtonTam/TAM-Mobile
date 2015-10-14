@@ -104,6 +104,25 @@
       "title": "Create Promo",
       "addToNavigation": true,
       "icon": "mostrecent"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "promoListView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:list",
+          "name": "promoListViewModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Activities",
+          "headerField": "Text",
+          "masterDetails": false,
+          "pullToRefresh": false,
+          "endlessScroll": false
+        }
+      ],
+      "title": "View promos",
+      "addToNavigation": true,
+      "icon": "bookmarks"
     }
   ],
   "dataProviders": [

@@ -1,0 +1,14 @@
+<div data-role="view" data-title="View promos" data-layout="main" data-model="app.promoListView" data-show="app.promoListView.onShow" data-after-show="app.promoListView.afterShow">
+    <!-- START_CUSTOM_CODE_promoListView -->
+    <!-- END_CUSTOM_CODE_promoListView -->
+    <ul data-role="listview" data-style="inset" data-template="promoListViewModelTemplate" data-bind="{ source: promoListViewModel.dataSource}" data-pull-to-refresh="false" data-endless-scroll="false">
+    </ul>
+    <!-- START_CUSTOM_CODE_promoListViewModel -->
+    <!-- END_CUSTOM_CODE_promoListViewModel -->
+    <script type="text/x-kendo-template" id="promoListViewModelTemplate">
+        <div class="image-with-text">
+            <h3>#: data['Text'] #</h3>
+
+        </div>
+    </script>
+</div>
