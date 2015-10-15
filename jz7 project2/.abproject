@@ -1,0 +1,45 @@
+{
+  "ProjectName": "jz7 project2",
+  "ProjectGuid": "afae90fe-98c5-461c-a7fc-dcde83bc18a6",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.jz7project2",
+  "DisplayName": "jz7 project2",
+  "Author": "",
+  "Description": "jz7 project2",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{5c228beb-f6c2-4ce9-b615-9db1835f2ee9}",
+  "WP8ProductID": "{268c3f82-6541-4227-a6d9-46382581e3b4}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.jz7project2",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
